@@ -156,7 +156,7 @@ button {
   font-size: 16px;
 }
 /* media */
-@media (max-width: 382px) {
+@media (max-width: 400px) {
   * {
     font-family: "Courier New", Courier, monospace;
   }
