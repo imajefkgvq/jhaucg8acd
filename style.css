@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+.container {
+  display: flex;
+}
+body {
+  background-image: url(images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+}
+.front,
+.back img {
+  z-index: -1;
+  margin-left: -110px;
+}
+.circle {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  gap: 12px;
+  top: 30px;
+  left: -72px;
+}
+.main1 {
+  position: relative;
+}
+.circle p:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+}
+.circle p:nth-child(2) {
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.front h1 {
+  margin-top: -123px;
+  padding-bottom: 110px;
+  color: white;
+  word-spacing: 3px;
+  font-size: 36px;
+  font-weight: 100;
+  margin-left: 39px;
+}
+.row {
+  font-size: 19px;
+  color: whitesmoke;
+  margin-top: -80px;
+  padding-bottom: 59px;
+  display: flex;
+  gap: 14rem;
+  font-style: oblique;
+  margin-left: 40px;
+}
+/* second card */
+.back {
+  position: relative;
+}
+.back img {
+  margin-left: -20px;
+}
+.back h4 {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 350px;
+  top: 111px;
+}
+/* main2 */
+.main2 {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.my1 input {
+  width: 350px;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 7px;
+  border: 1.4px solid #999;
+  height: 39px;
+}
+.my1,
+.my2 h4 {
+  color: #666;
+}
+.my2 p {
+  color: rgb(222, 13, 13);
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.my2 input {
+  margin-top: 10px;
+  width: 350px;
+  height: 30px;
+  border-radius: 7px;
+  border: 1.5px solid #999;
+  margin-bottom: 20px;
+  height: 39px;
+}
+.my3 input:nth-child(1) {
+  width: 70px;
+  height: 30px;
+  border-radius: 7px;
+  border: 1.5px solid #999;
+  height: 30px;
+  height: 39px;
+}
+.my3 input:nth-child(2) {
+  width: 70px;
+  height: 30px;
+  border-radius: 7px;
+  border: 1.5px solid #999;
+  margin-left: 10px;
+  height: 39px;
+}
+
+.my3 input:nth-child(3) {
+  width: 180px;
+  height: 30px;
+  border-radius: 7px;
+  margin-left: 5px;
+  border: 1.5px solid #999;
+  height: 39px;
+}
+.data {
+  padding-bottom: 10px;
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+}
+::placeholder {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #999;
+  position: absolute;
+  left: 10px;
+}
+button {
+  padding: 10px 145px 10px 145px;
+  margin-top: 30px;
+  border-radius: 6px;
+  color: rgb(215, 215, 215);
+  background-color: rgb(21, 21, 67);
+  font-size: 16px;
+}
+/* media */
+@media (max-width: 382px) {
+  * {
+    font-family: "Courier New", Courier, monospace;
+  }
+  html {
+    overflow: hidden;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -10px;
+  }
+
+  body {
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 440px 236px;
+    position: relative;
+  }
+  .main1 img {
+    width: 280px;
+    position: relative;
+    margin-left: 30px;
+    padding-bottom: -900px;
+  }
+  .main2 {
+    height: 100px;
+    padding: 0;
+    margin-bottom: 100px;
+    margin-top: 30px;
+  }
+
+  .img1 {
+    position: absolute;
+    left: 160px;
+    top: 140px;
+    position: relative;
+  }
+  .front h1 {
+    font-size: 18px;
+    position: absolute;
+    left: 60px;
+    top: 200px;
+    color: rgb(255, 255, 255);
+  }
+  .row1 {
+    position: absolute;
+    left: 100px;
+    top: 260px;
+    font-size: 12px;
+    /* display: flex; */
+  }
+  .row span {
+    position: absolute;
+    left: 300px;
+    top: 260px;
+    font-size: 12px;
+  }
+  .img2 {
+    position: absolute;
+    left: 120px;
+    top: -110px;
+  }
+  .circle {
+    z-index: 1;
+    position: absolute;
+    left: 99px;
+    top: 165px;
+  }
+  .circle p:nth-child(1) {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .circle p:nth-child(2) {
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  .back h4 {
+    color: rgb(214, 214, 214);
+    position: absolute;
+    left: 360px;
+    top: -43px;
+  }
+  .main2 {
+    margin-right: 85px;
+  }
+
+  .front h1 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .my1 input,
+  .my2 input,
+  .my3 input {
+    width: 330px;
+    margin-bottom: 10px;
+  }
+
+  .my3 input:nth-child(3) {
+    margin-left: 0;
+    width: 155px;
+  }
+
+  button {
+    width: 330px;
+    display: flex;
+    justify-content: center;
+  }
+}
